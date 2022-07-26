@@ -1,3 +1,6 @@
+//Iniciando o projeto - Foguete nao tem re!
+
+
 // Desafio 1
 function compareTrue() {
   // seu código aqui
