@@ -44,8 +44,25 @@ function highestCount(arr) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, a, b) {
+  let distanceOfCatA = Math.abs(mouse - a);
+  let distanceOfCatB = Math.abs(mouse - b);
+  let result = '';
+
+  if (distanceOfCatA < distanceOfCatB) {
+    result = 'cat1';
+  } else if (distanceOfCatA > distanceOfCatB) {
+    result = 'cat2';
+  } else {
+    result = 'os gatos trombam e o rato foge';
+  }
+  console.log(mouse);
+  console.log(a);
+  console.log(b);
+
+  return result;
+
+  // Reference: mdn and stackoverflow about converting negative numbers always positive (https://stackoverflow.com/questions/4652104/convert-a-negative-number-to-a-positive-one-in-javascript). Although I do know about *= -1, I did not want to use an IF just for that. It was insightful and I was glad to know that this method exists
 }
 
 // Desafio 8
