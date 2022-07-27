@@ -126,7 +126,20 @@ function decode(phrase) {
 
 // Desafio 10
 function techList(arr, studentName) {
-  // seu codigo aqui
+  let techStack = [];
+
+  if (arr.length === 0) {
+    return 'Vazio!';
+  }
+
+  let sortArr;
+  sortArr = arr.sort();
+
+  for (let i in sortArr) {
+    techStack.push({ tech: sortArr[i], name: studentName });
+  }
+
+  return techStack;
 }
 
 module.exports = {
