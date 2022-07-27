@@ -1,6 +1,4 @@
-//Iniciando o projeto - Foguete nao tem re!
-
-
+// Iniciando o projeto - Foguete nao tem re!
 // Desafio 1
 function compareTrue(a, b) {
   return a && b;
@@ -27,8 +25,22 @@ function footballPoints(win, tie) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arr) {
+  let highestRepeated = 0;
+  let getHighestNum = arr[0];
+
+  for (let i = 0; i <= arr.length; i += 1) {
+    if (arr[i] > getHighestNum) {
+      getHighestNum = arr[i];
+    }
+  }
+  for (let value in arr) {
+    if (arr[value] === getHighestNum) {
+      highestRepeated += 1;
+    }
+  }
+
+  return highestRepeated;
 }
 
 // Desafio 7
