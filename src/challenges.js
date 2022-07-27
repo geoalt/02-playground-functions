@@ -1,3 +1,5 @@
+/* eslint-disable max-lines-per-function */
+/* eslint-disable complexity */
 // Iniciando o projeto - Foguete nao tem re!
 // Desafio 1
 function compareTrue(a, b) {
@@ -56,9 +58,6 @@ function catAndMouse(mouse, a, b) {
   } else {
     result = 'os gatos trombam e o rato foge';
   }
-  console.log(mouse);
-  console.log(a);
-  console.log(b);
 
   return result;
 
@@ -84,16 +83,50 @@ function fizzBuzz(arr) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(phrase) {
+  let encodedPhrase = '';
+  for (let letter of phrase) {
+    if (letter === 'a') {
+      encodedPhrase += 1;
+    } else if (letter === 'e') {
+      encodedPhrase += 2;
+    } else if (letter === 'i') {
+      encodedPhrase += 3;
+    } else if (letter === 'o') {
+      encodedPhrase += 4;
+    } else if (letter === 'u') {
+      encodedPhrase += 5;
+    } else {
+      encodedPhrase += letter;
+    }
+  }
+
+  return encodedPhrase;
 }
-function decode() {
-  // seu código aqui
+function decode(phrase) {
+  let decodedPhrase = '';
+  for (let letter of phrase) {
+    if (letter === '1') {
+      decodedPhrase += 'a';
+    } else if (letter === '2') {
+      decodedPhrase += 'e';
+    } else if (letter === '3') {
+      decodedPhrase += 'i';
+    } else if (letter === '4') {
+      decodedPhrase += 'o';
+    } else if (letter === '5') {
+      decodedPhrase += 'u';
+    } else {
+      decodedPhrase += letter;
+    }
+  }
+
+  return decodedPhrase;
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arr, studentName) {
+  // seu codigo aqui
 }
 
 module.exports = {
