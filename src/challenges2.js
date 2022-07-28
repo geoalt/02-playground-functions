@@ -55,8 +55,22 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(order) {
+  let reg = /\d+/g;
+  let drinksArr = order.match(reg);
+  let result = 0;
+
+  for (let value of drinksArr) {
+    result += parseInt(value, 10);
+  }
+
+  if (result > 1) {
+    return `${result} copos de água`;
+  }
+
+  return `${result} copo de água`;
+
+  // Reference: JavaScript Problem: Extracting Numbers from a String (youtube): https://youtu.be/pfkkdzeyx6U
 }
 
 module.exports = {
